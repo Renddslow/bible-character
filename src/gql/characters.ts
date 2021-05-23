@@ -6,9 +6,17 @@ const Character = gql`
         female
     }
     
+    type TimeAndPlace {
+        year: Int
+        location: Location
+    }
+    
     type Character {
         name: String!
         gender: Gender
+        aliases: [String]
+        born: TimeAndPlace
+        died: TimeAndPlace
         relationshipsConnection(
             first: Int,
             after: String,

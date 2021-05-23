@@ -25,7 +25,7 @@ const grep = async (pattern: string, directory: string) => {
   return file.trim();
 };
 
-const getDocumentByID = async (id: string, type?: 'characters') => {
+const getDocumentByID = async (id: string, type?: 'characters' | 'locations') => {
   if (!type) {
     console.warn('You are searching the whole data folder with no type specifier. This can be slow.');
   }

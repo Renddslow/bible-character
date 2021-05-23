@@ -1,10 +1,10 @@
 id: ckp1npkcz000001mq6fw60spe
 name: Abraham
-aliases:
-  - Abram
+aliases: [Abram]
+gender: male
 born:
   year: 2150
-  location: Ur # swap this for ID later
+  location: ckp1r97by000001usdam4dobx
 died:
   year: 1975
   location: Hebron

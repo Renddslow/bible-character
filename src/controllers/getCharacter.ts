@@ -5,7 +5,7 @@ type Args = {
   ref: string;
 }
 
-const getCharacter = (args: Args) => {
+const getCharacter = (parent, args: Args) => {
   const { id } = parseRef(args.ref);
   return getDocumentByID(id as string, 'characters');
 };

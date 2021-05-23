@@ -1,8 +1,11 @@
 import { ApolloServer, gql } from 'apollo-server';
 import Character from './gql/characters';
+import Location from './gql/location';
 import getCharacter from './controllers/getCharacter';
+import getLocation from './controllers/getLocation';
 
 const typeDefs = [
+  Location,
   Character,
   gql`
     type Query {
@@ -16,6 +19,9 @@ const resolvers = {
   Query: {
     character: getCharacter,
   },
+  TimeAndPlace: {
+    location: getLocation,
+  }
 };
 
 const server = new ApolloServer({
