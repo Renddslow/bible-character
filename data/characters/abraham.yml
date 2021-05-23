@@ -1,0 +1,11 @@
+id: ckp1npkcz000001mq6fw60spe
+name: Abraham
+aliases:
+  - Abram
+born:
+  year: 2150
+  location: Ur # swap this for ID later
+died:
+  year: 1975
+  location: Hebron
+
