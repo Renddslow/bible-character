@@ -11,7 +11,8 @@
 		"build": "esbuild src/index.ts --outfile=dist/index.js --bundle --external:apollo-server --external:graphql --platform=node",
 		"watch:build": "yarn build --watch",
 		"watch:dist": "nodemon dist/index.js",
-		"start": "run-p watch:*"
+		"start": "run-p watch:*",
+		"new": "node tools/new.js"
 	},
 	"husky": {
 		"hooks": {
@@ -55,6 +56,7 @@
 	"dependencies": {
 		"apollo-server": "^2.24.1",
 		"catchify": "^2.6.1",
+		"cuid": "^2.1.8",
 		"graphql": "^15.5.0",
 		"pkg-up": "^3.1.0",
 		"qs": "^6.10.1",
