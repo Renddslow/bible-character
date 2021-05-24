@@ -2,7 +2,8 @@ id: ckp1syi9d0000939k027341ny
 name: Cain
 born:
   chapterRef: GEN.4
-died:
-  chapterRef: GEN.5
 gender: male
 type: human
+relationships:
+  father: ckp1slo2o0000cz9kblovaprs
+  mother: ckp1slqk30000df9k1vnwg01g

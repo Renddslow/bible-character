@@ -2,8 +2,8 @@ id: ckp1vbzkr00000z9kc2uv0zjl
 name: Enoch
 disambiguator: Son of Cain
 born:
-  year: 0
-died:
-  year: 0
+  chapterRef: GEN.4
 gender: male
 type: human
+relationships:
+  father: ckp1syi9d0000939k027341ny
