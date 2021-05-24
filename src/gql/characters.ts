@@ -18,7 +18,22 @@ const Character = gql`
         chapterRef: String
     }
     
+    enum RelationshipType {
+        father
+        mother
+        spouse
+        concubine
+        sibling
+        half_sibling
+        uncle
+        aunt
+        cousin
+        grandfather
+        grandmother
+    }
+    
     type Character {
+        id: String!
         name: String!
         gender: Gender
         type: CharacterType
@@ -30,17 +45,17 @@ const Character = gql`
             after: String,
             last: Int,
             before: String,
-            relationshipType: String
+            relationshipType: RelationshipType
         ): CharacterRelationshipsConnection
     }
     
     type CharacterRelationshipsConnection {
-        pageInfo: String!
         edges: [CharacterRelationshipsEdge]
     }
     
     type CharacterRelationshipsEdge {
         cursor: String!
+        relationshipType: RelationshipType!
         node: Character
     }
 `;

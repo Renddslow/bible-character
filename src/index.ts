@@ -1,16 +1,18 @@
 import { ApolloServer, gql } from 'apollo-server';
+
 import Character from './gql/characters';
 import Location from './gql/location';
 import getCharacter from './controllers/getCharacter';
 import getLocation from './controllers/getLocation';
+import getCharacterRelationships from './controllers/getCharacterRelationships';
 
 const typeDefs = [
   Location,
   Character,
   gql`
     type Query {
-        character(ref: String!): Character
-        characters: [Character]
+      character(ref: String!): Character
+      characters: [Character]
     }
   `,
 ];
@@ -21,6 +23,12 @@ const resolvers = {
   },
   TimeAndPlace: {
     location: getLocation,
+  },
+  Character: {
+    relationshipsConnection: getCharacterRelationships,
+  },
+  CharacterRelationshipsEdge: {
+    node: (parent) => getCharacter(null, { ref: `id=${parent.id}` }),
   }
 };
 
@@ -31,4 +39,4 @@ const server = new ApolloServer({
 
 server.listen().then(({ url }) => {
   console.log(`📕 Running Bible GQL server at ${url}`);
-})
+});
