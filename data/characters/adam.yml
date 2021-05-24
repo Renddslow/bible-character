@@ -4,3 +4,6 @@ gender: male
 type: human
 born:
   chapterRef: GEN.2
+died:
+  chapterRef: GEN.5
+yearsLived: 930

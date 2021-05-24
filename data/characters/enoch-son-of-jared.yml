@@ -1,0 +1,10 @@
+id: ckp1zogmh0000mn9kb3ho3770
+name: Enoch
+disambiguator: Son of Jared
+born:
+  chapterRef: GEN.5
+gender: male
+type: human
+yearsLived: 365
+relationships:
+  father: ckp1zmndc0000i99k82vye8fz

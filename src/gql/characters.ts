@@ -40,6 +40,7 @@ const Character = gql`
         aliases: [String]
         born: TimeAndPlace
         died: TimeAndPlace
+        yearsLived: Int
         relationshipsConnection(
             first: Int,
             after: String,
