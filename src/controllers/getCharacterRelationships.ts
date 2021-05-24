@@ -1,7 +1,6 @@
 import fs from 'fs';
 import { promisify } from 'util';
 import yaml from 'yaml';
-import arrayUnion from 'array-union';
 import unique from '@arr/unique';
 
 const read = promisify(fs.readFile);
@@ -33,7 +32,7 @@ const getCharacterRelationships = async (parent, args: Args) => {
     return null;
   }
 
-  const relationships = Object.keys(parent.relationships).map((key) => ({
+  const relationships: Array<{ id: string; relationshipType: string }> = Object.keys(parent.relationships).map((key) => ({
     relationshipType: key,
     id: parent.relationships[key],
   }));
@@ -53,13 +52,18 @@ const getCharacterRelationships = async (parent, args: Args) => {
     );
   }
 
-  const siblings = arrayUnion(paternalSiblings, maternalSiblings);
-  const halfSiblings = unique(
-    [...maternalSiblings, ...paternalSiblings].filter((s) => !siblings.includes(s)),
-  ).map((id) => ({ relationshipType: 'half_sibling', id }));
+  const halfSiblings = unique([
+    ...paternalSiblings.filter((p) => !maternalSiblings.includes(p)),
+    ...maternalSiblings.filter((p) => !paternalSiblings.includes(p)),
+  ]);
 
-  relationships.push(...halfSiblings);
-  relationships.push(...siblings.map((id) => ({ id, relationshipType: 'sibling' })));
+  const siblings = unique([...paternalSiblings, ...maternalSiblings]).filter(
+    (s) => !halfSiblings.includes(s),
+  );
+
+  const type = (relationshipType: string) => (id: string) => ({ id, relationshipType });
+  relationships.push(...halfSiblings.map(type('half_sibling')));
+  relationships.push(...siblings.map(type('sibling')));
 
   return {
     edges: relationships,
