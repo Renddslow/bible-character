@@ -12,7 +12,8 @@
 		"watch:build": "yarn build --watch",
 		"watch:dist": "nodemon dist/index.js",
 		"start": "run-p watch:*",
-		"new": "node tools/new.js"
+		"new": "node tools/new.js",
+		"id": "node tools/id.js"
 	},
 	"husky": {
 		"hooks": {
