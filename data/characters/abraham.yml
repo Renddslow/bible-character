@@ -1,7 +1,9 @@
 id: ckp1npkcz000001mq6fw60spe
 name: Abraham
-aliases: [Abram]
+aliases:
+  - Abram
 gender: male
+type: human
 born:
   year: 2150
   location: ckp1r97by000001usdam4dobx

@@ -6,14 +6,22 @@ const Character = gql`
         female
     }
     
+    enum CharacterType {
+        deity
+        divine_being
+        human
+    }
+    
     type TimeAndPlace {
         year: Int
         location: Location
+        chapterRef: String
     }
     
     type Character {
         name: String!
         gender: Gender
+        type: CharacterType
         aliases: [String]
         born: TimeAndPlace
         died: TimeAndPlace
