@@ -3,4 +3,4 @@ name: Eve
 gender: female
 type: human
 born:
-  chapterRef: GEN.2
+  ref: GEN.2

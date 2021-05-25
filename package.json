@@ -13,7 +13,8 @@
 		"watch:dist": "nodemon dist/index.js",
 		"start": "run-p watch:*",
 		"new": "node tools/new.js",
-		"id": "node tools/id.js"
+		"id": "node tools/id.js",
+		"size": "node tools/size.js"
 	},
 	"husky": {
 		"hooks": {

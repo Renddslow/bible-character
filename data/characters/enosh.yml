@@ -1,7 +1,7 @@
 id: ckp1zesen0000z89k3rd98h5m
 name: Enosh
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 gender: male
 type: human
 yearsLived: 905

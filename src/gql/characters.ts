@@ -15,7 +15,7 @@ const Character = gql`
     type TimeAndPlace {
         year: Int
         location: Location
-        chapterRef: String
+        ref: String
     }
     
     enum RelationshipType {
@@ -25,8 +25,7 @@ const Character = gql`
         concubine
         sibling
         half_sibling
-        uncle
-        aunt
+        parent_sibling
         cousin
         grandfather
         grandmother

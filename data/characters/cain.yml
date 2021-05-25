@@ -1,7 +1,7 @@
 id: ckp1syi9d0000939k027341ny
 name: Cain
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 gender: male
 type: human
 relationships:

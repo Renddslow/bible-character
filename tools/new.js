@@ -14,8 +14,8 @@ const path = require('path');
   };
 
   if (type === 'character') {
-    data.born = { chapterRef: 'GEN.1' };
-    data.died = { chapterRef: 'GEN.1' };
+    data.born = { ref: 'GEN.1' };
+    data.died = { ref: 'GEN.1' };
     data.gender = 'male'; // there are significantly more named male characters, saves time
     data.type = 'human';
   }

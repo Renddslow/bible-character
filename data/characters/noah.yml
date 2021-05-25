@@ -2,9 +2,9 @@ id: ckp1s8eq50000ek9kcz0r97st
 name: Noah
 type: human
 born:
-  chapterRef: GEN.5
+  ref: GEN.5
 died:
-  chapterRef: GEN.9
+  ref: GEN.9
 gender: male
 yearsLived: 0
 relationships:

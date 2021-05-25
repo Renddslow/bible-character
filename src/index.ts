@@ -11,7 +11,7 @@ const typeDefs = [
   Character,
   gql`
     type Query {
-      character(ref: String!): Character
+      character(id: String!): Character
       characters: [Character]
     }
   `,
@@ -28,7 +28,7 @@ const resolvers = {
     relationshipsConnection: getCharacterRelationships,
   },
   CharacterRelationshipsEdge: {
-    node: (parent) => getCharacter(null, { ref: `id=${parent.id}` }),
+    node: (parent) => getCharacter(null, { id: parent.id }),
   }
 };
 

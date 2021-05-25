@@ -1,7 +1,7 @@
 id: ckp1yta3s0000kh9kek0b0hya
 name: Jubal
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 gender: male
 type: human
 relationships:

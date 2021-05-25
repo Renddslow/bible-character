@@ -1,12 +1,11 @@
 import getDocumentByID from '../utils/getDocumentByID';
-import parseRef from '../utils/parseRef';
 
 type Args = {
-  ref: string;
+  id: string;
 }
 
 const getCharacter = (parent, args: Args) => {
-  const { id } = parseRef(args.ref);
+  const { id } = args;
   return getDocumentByID(id as string, 'characters');
 };
 

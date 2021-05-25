@@ -1,9 +1,9 @@
 id: ckp1zd9gy0000ve9kei553ez0
 name: Seth
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 died:
-  chapterRef: GEN.5
+  ref: GEN.5
 gender: male
 type: human
 relationships:

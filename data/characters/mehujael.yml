@@ -1,7 +1,7 @@
 id: ckp1yjbh20000tm9kfblgbdtd
 name: Mehujael
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 gender: male
 type: human
 relationships:

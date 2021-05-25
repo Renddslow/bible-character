@@ -1,7 +1,7 @@
 id: ckp1ysq0f0000iq9k72x232wf
 name: Jabal
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 gender: male
 type: human
 relationships:

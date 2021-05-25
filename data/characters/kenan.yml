@@ -1,9 +1,9 @@
 id: ckp1zianw00007u9kbukw54z9
 name: Kenan
 born:
-  chapterRef: GEN.5
+  ref: GEN.5
 died:
-  chapterRef: GEN.5
+  ref: GEN.5
 gender: male
 type: human
 yearsLived: 910

@@ -3,7 +3,7 @@ name: Adam
 gender: male
 type: human
 born:
-  chapterRef: GEN.2
+  ref: GEN.2
 died:
-  chapterRef: GEN.5
+  ref: GEN.5
 yearsLived: 930

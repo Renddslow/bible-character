@@ -1,7 +1,7 @@
 id: ckp1yli0l0000zl9khtuufpop
 name: Lamech
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 gender: male
 type: human
 relationships:

@@ -1,7 +1,7 @@
 id: ckp1yvk3b0000pp9kbigmdr4c
 name: Tubal-Cain
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 gender: male
 type: human
 relationships:

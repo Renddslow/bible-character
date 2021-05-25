@@ -1,9 +1,9 @@
 id: ckp1sykic00009q9k4p38frim
 name: Abel
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 died:
-  chapterRef: GEN.4
+  ref: GEN.4
 gender: male
 type: human
 relationships:

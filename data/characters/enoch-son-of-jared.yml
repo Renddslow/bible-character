@@ -2,7 +2,7 @@ id: ckp1zogmh0000mn9kb3ho3770
 name: Enoch
 disambiguator: Son of Jared
 born:
-  chapterRef: GEN.5
+  ref: GEN.5
 gender: male
 type: human
 yearsLived: 365

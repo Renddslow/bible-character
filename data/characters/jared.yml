@@ -1,9 +1,9 @@
 id: ckp1zmndc0000i99k82vye8fz
 name: Jared
 born:
-  chapterRef: GEN.5
+  ref: GEN.5
 died:
-  chapterRef: GEN.5
+  ref: GEN.5
 gender: male
 type: human
 yearsLived: 962

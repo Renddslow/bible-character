@@ -2,9 +2,9 @@ id: ckp1zr5t30000te9k60qyd0sg
 name: Lamech
 disambiguator: Son of Methuselah
 born:
-  chapterRef: GEN.5
+  ref: GEN.5
 died:
-  chapterRef: GEN.5
+  ref: GEN.5
 yearsLived: 777
 gender: male
 type: human

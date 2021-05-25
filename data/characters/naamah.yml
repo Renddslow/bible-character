@@ -1,7 +1,7 @@
 id: ckp1ywgfe0000sd9kcg5k25tb
 name: Naamah
 born:
-  chapterRef: GEN.4
+  ref: GEN.4
 gender: female
 type: human
 relationships:
